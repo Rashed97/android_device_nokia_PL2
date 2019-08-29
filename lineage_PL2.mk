@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from nokia sdm660-common
 $(call inherit-product, device/nokia/sdm660-common/sdm660.mk)
@@ -38,7 +38,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Include Bootanimation configuration
 TARGET_BOOT_ANIMATION_RES :=1080
 
-PRODUCT_NAME := aosp_PL2
+PRODUCT_NAME := lineage_PL2
 PRODUCT_DEVICE := PL2
 PRODUCT_MANUFACTURER := FIH
 PRODUCT_BRAND := Nokia
